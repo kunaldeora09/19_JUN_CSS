@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute Selector Practice</title>
     <style>
+        span[class*="p"]
+        {
+            color: crimson;
+        }
         input[type*="text"]{
             background-color: aqua;
             color: brown;
             font-size: 20px;
-        }
-        span[class*="p"]
-        {
-            color: crimson;
         }
         input[type*="radio"]
         {
@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-    <span class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cum.</span> <br>
+    <span class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <br>
     <span class="span p">Lorem ipsum dolor sit.</span> <br>
     <input type="text" placeholder="enter your name"> <br>
     <input type="text1" placeholder="enter your name"> <br>
