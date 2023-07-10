@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector Practice</title>
+    <style>
+        a{
+            color: red;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        a:active{
+            color: blue;
+            font-size: 30px;
+        }
+        a:visited{
+            color: brown;
+            font-size: 30px;
+        }
+        button{
+            border: 1px solid black;
+            background-color: chartreuse;
+            color: white;
+            font-size: 30px;
+            transition: 1s;
+        }
+        button:hover{
+            border: 1px solid black;
+            font-size: 30px;
+            color: black;
+            background-color: blue;
+            cursor: pointer;
+            transition: 1s;
+        }
+        div{
+            background-image: url(../../../ImageCSS/01imageCSS.jpeg);
+            height: 250px;
+            width: 200px;
+            transition: 2s;
+        }
+        div:hover{
+            background-image: url(../../../ImageCSS/02imageCSS.jpeg);
+            height: 250px;
+            width: 200px;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.wikipedia.org/">Wikipedia</a><br><br>
+    <button>Hover</button> <br><br>
+    <div></div> <br>
+</body>
+</html>
