@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: teal;
+            background-clip: padding-box ;
+            width: 500px;
+            height: 300px;
+            margin:  50px auto;
+            padding: 100px;
+            border: 20px solid black;
+            border: 20px dashed red;
+            border: 20px double blue;
+            border: 20px ridge greenyellow;
+            border: 20px groove orangered;
+            border: 20px dotted violet;
+            border: 20px inset pink;
+            border: 20px outset rgb(244, 1, 74);
+            border-radius: 50px;
+            border-radius: 50%;
+        }
+
+        .circle{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: khaki;
+            border: 20px solid teal;
+            border-radius: 50%;
+        }
+        .image-circle{
+            width: 300px;
+            height: 300px;
+            border: 10px solid blue;
+            margin: 50px auto;
+            text-align: center;
+            background: url(../../ImageCSS/01imageCSS.jpeg)no-repeat center center/cover;
+        }
+
+        p{
+            color: white;
+            font-size: 50px;
+            padding-top: 70px;
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis deleniti id ut deserunt mollitia quaerat possimus excepturi dolores, aliquam nisi. Esse repellat voluptatibus ut aliquam laboriosam excepturi illo. Inventore, facere?
+    </div>
+    <div class="circle"></div>
+    <div class="image-circle"><p>Kunal</p></div>
+</body>
+</html>
