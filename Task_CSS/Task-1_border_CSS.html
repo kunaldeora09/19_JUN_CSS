@@ -426,6 +426,42 @@
             border: 10px solid aqua;
             border-right-style: double;
         }
+
+        /* border-image */
+        .border-image{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(78, 17, 52);
+            border: 20px solid ;
+            border-image: url(../ImageCSS/01imageCSS.jpeg) 30;            
+        }
+
+        /* border-block */
+        .border-block{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            background-color: peru;
+            border-block: 10px solid red;
+            writing-mode: vertical-lr;
+        }
+
+        /* border-block-color */
+        .border-block-color{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            background-color: palevioletred;
+            border: 20px solid blue;
+            border-block-color:  green;
+        }
     </style>
 </head>
 <body>
@@ -470,9 +506,11 @@
     <div class="border-top-style">border-top-style</div>
     <div class="border-left-style">border-left-style</div>
     <div class="border-right-style">border-right-style</div>
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
+
+    <div class="border-image">border-image</div>
+
+    <div class="border-block">border-block</div>
+    <div class="border-block-color">border-block-color</div>
     <div class=""></div>
     <div class=""></div>
     <div class=""></div>

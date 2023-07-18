@@ -12,13 +12,19 @@
             font-size: 50px;
             border: 4px dashed orangered;
         }
+
+        /* background-color */
         .background-color{
             background-color: aqua;
         }
+
+        /* background-image */
         .background-image{
             background-image: url(../../ImageCSS/01imageCSS.jpeg);
             color: white;
         }
+
+        /* background-repeat */
         .background-repeat{
             background-image: url(../../ImageCSS/01imageCSS.jpeg);
             color: white;
@@ -32,6 +38,8 @@
             /* background-repeat: inherit; */
             /* background-repeat: initial; */
         }
+
+        /* background-attachment */
         .background-attachment{
             background-image: url(../../ImageCSS/01imageCSS.jpeg);
             background-attachment: scroll;
@@ -39,6 +47,8 @@
             background-attachment: fixed;
             color: white;
         }
+
+        /* background-position */
         .background-position{
             background-image: url(../../ImageCSS/01imageCSS.jpeg);
             background-repeat: no-repeat;
@@ -47,6 +57,8 @@
             background-position: center;
             /* background-position: 10px 50px 10px; */
         }
+
+        /* background-size */
         .background-size{
             background-image:url(../../ImageCSS/01imageCSS.jpeg);
             background-repeat: no-repeat;
@@ -55,11 +67,15 @@
             background-size: 50% 100%;
             background-size: cover;
         }
+
+        /* background-multiple */
         .background-multiple{
             background-image: url(../../ImageCSS/01imageCSS.jpeg), url(../../ImageCSS/02imageCSS.jpeg), url(../../ImageCSS/02imageCSS.jpeg), url(../../ImageCSS/01imageCSS.jpeg);
             background-repeat: no-repeat;
             background-position: left top, left bottom, right top, right bottom;
         }
+
+        /* background-clip */
         .background-clip{
             background-image: url(../../ImageCSS/01imageCSS.jpeg);
             color: white;
@@ -68,6 +84,8 @@
             background-clip: content-box;
             padding: 100px;
         }
+
+        /* background-origin */
         .background-origin{
             background: url(../../ImageCSS/02imageCSS.jpeg) no-repeat;
             color: red;
@@ -79,14 +97,32 @@
     </style>
 </head>
 <body>
+    
+    <!-- background-attachment -->
       <div class="background-attachment">background-attachment</div>
+
+      <!-- background-clip -->
       <div class="background-clip">background-clip</div>
+
+      <!-- background-origin -->
       <div class="background-origin">background-origin</div>
+
+      <!-- background-color -->
       <div class="background-color">background-color</div>
+
+      <!-- background-image -->
       <div class="background-image">background-image</div>
+
+      <!-- background-position -->
       <div class="background-position">background-position</div>
+
+      <!-- background-repeat -->
       <div class="background-repeat">background-repeat</div>
+
+      <!-- background-size -->
       <div class="background-size">background-size</div>
+
+      <!-- background-multiple -->
       <div class="background-multiple">background-multiple</div>
 </body>
 </html>
