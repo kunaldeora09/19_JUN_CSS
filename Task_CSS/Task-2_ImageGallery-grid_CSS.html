@@ -11,9 +11,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border: 1px solid black;
         }
-        
+
+        /* Image Gallery-1 */
         .box {
             display: grid;
             gap: 10px;
@@ -61,11 +61,26 @@
             background-position: top 40px;
         }
 
+        .box5 {
+            background-image: url(../ImageCSS/10imageCSS.jpeg);
+            background-size: cover;
+            background-position: center;
+            grid-column: 5/6;
+            grid-row: 3/4;
+        }
+
         .box6 {
             grid-row: 3/6;
             background-image: url(../ImageCSS/07imageCSS.jpeg);
             background-size: cover;
             background-position: 0px;
+        }
+
+        .box7 {
+            background-image: url(../ImageCSS/09imageCSS.jpeg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 4/5;
         }
 
         .box8 {
@@ -76,21 +91,6 @@
             background-position: center;
         }
 
-        .box7 {
-            background-image: url(../ImageCSS/09imageCSS.jpeg);
-            background-size: cover;
-            background-position: center;
-            grid-row: 4/5;
-        }
-
-        .box5 {
-            background-image: url(../ImageCSS/10imageCSS.jpeg);
-            background-size: cover;
-            background-position: center;
-            grid-column: 5/6;
-            grid-row: 3/4;
-        }
-
         .box9 {
             background-image: url(../ImageCSS/11imageCSS.jpeg);
             background-size: cover;
@@ -98,7 +98,7 @@
             grid-row: 5/6;
         }
 
-
+        /* Image Gallery-2 */
         .image {
             display: grid;
             gap: 10px;
@@ -157,6 +157,7 @@
             background-size: cover;
         }
 
+        /* Image Gallery-3 */
         .pic {
             display: grid;
             gap: 10px;
@@ -165,26 +166,30 @@
             margin: 20px;
         }
 
-        .pic1{
+        .pic1 {
             grid-row: 1/2;
             grid-column: 1/9;
-            background-color: aqua;
+            background-image: url(../ImageCSS/21imageCSS.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
 
-        .pic2{
+        .pic2 {
             grid-column: 1/2;
             grid-row: 2/3;
             background-image: url(../ImageCSS/20imageCSS.jpg);
             background-size: cover;
         }
 
-        .pic8{
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background-color: brown;
+        .pic3 {
+            grid-row: 2/3;
+            grid-column: 3/4;
+            background-image: url(../ImageCSS/26imageCSS.webp);
+            background-size: contain;
         }
 
-        .pic5{
+        .pic4 {
             grid-column: 4/6;
             grid-row: 2/4;
             background-image: url(../ImageCSS/19imageCSS.jpg);
@@ -194,43 +199,221 @@
             border-radius: 50%;
         }
 
-        .pic4{
-            grid-row: 2/3;
-            grid-column: 3/4;
-            background-color: saddlebrown;
-        }
-
-        .pic6{
+        .pic5 {
             grid-column: 6/7;
             grid-row: 2/3;
-            background-color: chartreuse;
+            background-image: url(../ImageCSS/24imageCSS.jpg);
+            background-size: contain;
         }
 
-        .pic13{
-            grid-column: 7/8;
+        .pic6 {
+            grid-column: 2/3;
             grid-row: 3/4;
-            background-color: lightcoral;
+            background-image: url(../ImageCSS/22imageCSS.webp);
+            background-size: cover;
         }
 
-        .pic9{
+        .pic7 {
             grid-column: 8/9;
             grid-row: 2/3;
-            background-color: crimson;
+            background-image: url(../ImageCSS/25imageCSS.webp);
+            background-size: cover;
         }
 
-        .pic15{
-            grid-column: 1/9;
-            grid-row: 4/5;
-            background-image: url(../ImageCSS/21imageCSS.jpeg);
+        .pic8 {
+            grid-column: 7/8;
+            grid-row: 3/4;
+            background-image: url(../ImageCSS/23imageCSS.jpg);
+            background-size: cover;
+        }
+
+        /* Image Gallery-4 */
+        .cover {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .cover1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            border-radius: 50%;
+            background-image: url(../ImageCSS/28imageCSS.jpeg);
+            background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
+        }
+
+        .cover2 {
+            grid-column: 1/2;
+            grid-row: 3/5;
+            background-image: url(../ImageCSS/30imageCSS.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cover3 {
+            grid-column: 2/4;
+            grid-row: 1/5;
+            background-image: url(../ImageCSS/29imageCSS.jpg);
+            background-size: cover;
+        }
+
+        .cover4 {
+            grid-column: 4/6;
+            grid-row: 1/3;
+            border-radius: 300px;
+            background-image: url(../ImageCSS/27imageCSS.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cover5 {
+            grid-column: 4/6;
+            grid-row: 3/5;
+        }
+
+        .covertext {
+            text-align: center;
+            color: black;
+            font-size: 80px;
+            margin-top: 55px;
+            text-shadow: 7px 7px 15px black;
+        }
+
+        /* Image Gallery-5 */
+        .photo {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .photo1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-image: url(../ImageCSS/31imageCSS.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-image: url(../ImageCSS/36imageCSS.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo3 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            background-image: url(../ImageCSS/39imageCSS.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo4 {
+            grid-row: 1/3;
+            grid-column: 4/5;
+            background-image: url(../ImageCSS/33imageCSS.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo5 {
+            grid-column: 5/6;
+            grid-row: 1/2;
+            background-image: url(../ImageCSS/41imageCSS.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo6 {
+            grid-row: 1/2;
+            grid-column: 6/8;
+            background-image: url(../ImageCSS/32imageCSS.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo7 {
+            grid-column: 8/9;
+            grid-row: 1/3;
+            background-image: url(../ImageCSS/34imageCSS.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo8 {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            background-image: url(../ImageCSS/35imageCSS.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo9 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            background-image: url(../ImageCSS/37imageCSS.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo10 {
+            grid-column: 5/7;
+            grid-row: 2/4;
+            background-image: url(../ImageCSS/40imageCSS.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo11 {
+            grid-row: 2/3;
+            grid-column: 7/8;
+            background-image: url(../ImageCSS/42imageCSS.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo12 {
+            grid-row: 3/4;
+            grid-column: 1/3;
+            background-image: url(../ImageCSS/38imageCSS.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo13 {
+            grid-column: 4/5;
+            grid-row: 3/4;
+            background-image: url(../ImageCSS/43imageCSS.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo14 {
+            grid-column: 7/9;
+            grid-row: 3/4;
+        }
+
+        .phototext {
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            margin-top: 48px;
+            text-shadow: 7px 7px 15px black;
         }
     </style>
 
 </head>
 
 <body>
+
+    <!-- Image Gallery-1 -->
     <div class="box">
         <div class="boxname"></div>
         <div class="box1"></div>
@@ -242,10 +425,11 @@
         <div class="box7"></div>
         <div class="box8"></div>
         <div class="box9"></div>
-    </div> 
-    
+    </div>
+
     <br><br><br>
-    
+
+    <!-- Image Gallery-2 -->
     <div class="image">
         <div class="image1"></div>
         <div class="image2"></div>
@@ -257,17 +441,52 @@
 
     <br><br><br>
 
+    <!-- Image Gallery-3 -->
     <div class="pic">
-        <div class="pic1">pic1</div>
-        <div class="pic2">pic2</div>
-        <div class="pic4">pic4</div>
-        <div class="pic5">pic5</div>
-        <div class="pic6">pic6</div>
-        <div class="pic8">pic8</div>
-        <div class="pic9">pic9</div>
-        <div class="pic13">pic13</div>
-        <div class="pic15">pic15</div>
-    </div> 
+        <div class="pic1"></div>
+        <div class="pic2"></div>
+        <div class="pic3"></div>
+        <div class="pic4"></div>
+        <div class="pic5"></div>
+        <div class="pic6"></div>
+        <div class="pic7"></div>
+        <div class="pic8"></div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Image Gallery-4 -->
+    <div class="cover">
+        <div class="cover1"></div>
+        <div class="cover2"></div>
+        <div class="cover3"></div>
+        <div class="cover4"></div>
+        <div class="cover5">
+            <p class="covertext">Train Gallery</p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Image Gallery-5 -->
+    <div class="photo">
+        <div class="photo1">photo1</div>
+        <div class="photo2">photo2</div>
+        <div class="photo3">photo3</div>
+        <div class="photo4">photo4</div>
+        <div class="photo5">photo5</div>
+        <div class="photo6">photo6</div>
+        <div class="photo7">photo7</div>
+        <div class="photo8">photo8</div>
+        <div class="photo9">photo9</div>
+        <div class="photo10">photo10</div>
+        <div class="photo11">photo11</div>
+        <div class="photo12">photo12</div>
+        <div class="photo13">photo13</div>
+        <div class="photo14">
+            <p class="phototext">Anime Gallery</p>
+        </div>
+    </div>
 </body>
 
 </html>
