@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex In CSS Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        img{
+            width: 100%;
+        }
+        .pe{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+            gap: 20px;
+        }
+        .box{
+            width: 33.33%;
+        }
+    </style>
+</head>
+<body>
+    <div class="pe">
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis molestiae repudiandae nisi quaerat quae placeat officiis odit hic nostrum facere eligendi, ipsum voluptate dolorem sed, veniam asperiores dolorum nobis tempore.</div>
+        <div class="box">Kunal</div>
+        <div class="box"><img src="../../ImageCSS/03imageCSS.jpg" alt="Image"></div>
+    </div>
+</body>
+</html>
