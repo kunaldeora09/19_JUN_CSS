@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous Practice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+        h1{
+            font-family: "lugrasimo",sans-serif;
+        }
+        h1::before{
+            content: "* ";
+            color: red;
+        }
+        h1::after{
+            content: " !";
+            color: blue;
+        }
+
+        table,td,caption{
+            /* border-collapse: collapse; */
+            border: 2px solid black;
+        }
+        caption{
+            caption-side: bottom;
+        }
+
+        hr{
+            background-color: blue;
+            height: 1px;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            /* background-color: aqua; */
+            background: url(../../ImageCSS/03imageCSS.jpg)no-repeat center center/cover;
+            border-radius: 25px;
+            border: 5px solid black;
+            margin: 0 auto;
+
+            /* cursor: text;
+            cursor: pointer;
+            cursor: alias;
+            cursor: all-scroll;
+            cursor: auto;
+            cursor: cell;
+            cursor: col-resize;
+            cursor: copy;
+            cursor: grab; */
+            cursor: default;
+
+
+           /* opacity: 0.1;
+            opacity: 1; */
+
+
+           /* visibility: visible;
+            display: none;
+            visibility: hidden; */
+
+
+            /* filter: blur(5px);
+            filter: contrast(50%);
+            filter: grayscale(50%);
+            filter: hue-rotate(50deg);
+            filter: brightness(50%);
+            filter: drop-shadow(5px 5px 5px red) invert(77%);
+            filter: saturate(60%); */
+        }
+        input{
+            font-size: 20px;
+            background-color: lightblue;
+            color: red;
+            border: 2px dashed navy;
+            border-radius: 25px;
+        }
+        input:focus{
+            outline: none;
+            border: none;
+            border-bottom: 5px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <table>
+        <caption>kunal</caption>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+    </table>
+    <hr>
+    before
+    <div class="box"></div>
+    after
+
+    <hr>
+    <input type="text" placeholder="Name">
+    <textarea placeholder="textarea" cols="10" rows="5"></textarea>
+</body>
+</html>
