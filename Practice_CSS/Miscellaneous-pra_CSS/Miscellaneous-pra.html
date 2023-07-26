@@ -77,10 +77,31 @@
             border: 2px dashed navy;
             border-radius: 25px;
         }
-        input:focus{
+        input:focus {
             outline: none;
             border: none;
             border-bottom: 5px solid gold;
+        }
+        input::placeholder{
+            color: chartreuse;
+        }
+        button{
+            background-color: aqua;
+            color: black;
+            transition: 1s;
+        }
+        button:hover{
+            transition: 1s;
+            background-color: blue;
+            color: white;
+        }
+        .ima{
+            width: 200px;
+            border: 5px solid black;
+        }
+        img{
+            width: 100%;
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -122,5 +143,8 @@
     <hr>
     <input type="text" placeholder="Name">
     <textarea placeholder="textarea" cols="10" rows="5"></textarea>
+    <button>button</button>
+    <hr>
+    <div class="ima"><img src="../../ImageCSS/03imageCSS.jpg" alt="image"></div>
 </body>
 </html>

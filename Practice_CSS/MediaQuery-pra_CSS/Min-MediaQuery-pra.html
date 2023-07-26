@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Media Query Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .col-50 {
+            /* width: 50%; */
+            width: 100%;
+        }
+
+        .col-33 {
+            /* width: 33.33%; */
+            width: 100%;
+        }
+
+        .col-25 {
+            /* width: 25%; */
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /* Media Query */
+
+        /* // Small devices (landscape phones, 576px and up) */
+        @media (max-width: 576px) {
+            .col-50 {
+                width: 100%;
+            }
+
+            .col-33 {
+                width: 100%;
+            }
+
+            .col-25 {
+                width: 100%;
+            }
+        }
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .col-50 {
+                width: 100%;
+            }
+
+            .col-33 {
+                width: 100%;
+            }
+
+            .col-25 {
+                width: 50%;
+            }
+        }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .col-50 {
+                width: 100%;
+            }
+
+            .col-33 {
+                width: 50%;
+            }
+
+            .col-25 {
+                width: 33.33%;
+            }
+        }
+
+        /* // X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .col-50 {
+                width: 50%;
+            }
+
+            .col-33 {
+                width: 33.33%;
+            }
+
+            .col-25 {
+                width: 25%;
+            }
+        }
+
+        /* // XX-Large devices (larger desktops, 1400px and up) */
+        /* @media (min-width: 1400px) {
+      } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, fuga
+                molestias. Delectus et vel rerum natus, aut, incidunt officia
+                perspiciatis quis optio maxime nemo quasi omnis nam commodi voluptates
+                aspernatur?
+            </div>
+            <div class="col-50"><img src="../../ImageCSS/03imageCSS.jpg" alt="image" /></div>
+        </div>
+        <div class="row">
+            <div class="col-33">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, fuga
+                molestias. Delectus et vel rerum natus, aut, incidunt officia
+                perspiciatis quis optio maxime nemo quasi omnis nam commodi voluptates
+                aspernatur?
+            </div>
+            <div class="col-33"><img src="../../ImageCSS/03imageCSS.jpg" alt="image" /></div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, fuga
+                molestias. Delectus et vel rerum natus, aut, incidunt officia
+                perspiciatis quis optio maxime nemo quasi omnis nam commodi voluptates
+                aspernatur?
+            </div>
+            <div class="col-25"><img src="../../ImageCSS/03imageCSS.jpg" alt="image" /></div>
+            <div class="col-25">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, fuga
+                molestias. Delectus et vel rerum natus, aut, incidunt officia
+                perspiciatis quis optio maxime nemo quasi omnis nam commodi voluptates
+                aspernatur?
+            </div>
+            <div class="col-25"><img src="../../ImageCSS/03imageCSS.jpg" alt="image" /></div>
+        </div>
+    </div>
+</body>
+
+</html>
