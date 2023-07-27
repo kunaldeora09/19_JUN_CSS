@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice</title>
+    <style>
+        body {
+            background-image: linear-gradient(blue, red);
+        }
+
+        .tb {
+            background-color: darkorange;
+            height: 50px;
+            width: 500px;
+            transition: 1.5s;
+            border: 2px black solid;
+            float: left;
+        }
+
+        .tb:hover {
+            transition: 1.5s;
+            background-color: chartreuse;
+            height: 50px;
+            width: 100px;
+            border-radius: 500px;
+        }
+
+        .t {
+            background-color: aqua;
+            height: 50px;
+            width: 500px;
+            transition: 1.5s;
+            margin-bottom: 25px;
+            border: 2px black solid;
+            float: right;
+        }
+
+        .t:hover {
+            transition: 1.5s;
+            background-color: red;
+            height: 50px;
+            width: 100px;
+            border-radius: 500px;
+            transform: rotate(360deg);
+        }
+
+        .s {
+            width: 150px;
+            height: 50px;
+            background-color: maroon;
+            border-radius: 70%;
+            border: 2px black solid;
+            text-align: center;
+            transition: 0.5s;
+            align-items: center;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .s:hover {
+            width: 100px;
+            height: 100px;
+            background-color: darkolivegreen;
+            border-radius: 500%;
+            transition: 0.5s;
+            transform: rotate(360deg);
+            text-align: center;
+        }
+
+        .a {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            animation: mymove 5s infinite;
+            border: 2px black solid;
+            transition: 1.5s;
+            position: relative;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: 0px;
+                background-color: brown;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                left: 1155px;
+                background-color: blueviolet;
+                transform: rotate(180deg);
+            }
+
+            51% {
+                right: 1155px;
+                background-color: blueviolet;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                left: 0px;
+                background-color: brown;
+                transform: rotate(0deg);
+            }
+        }
+
+        .a:hover {
+            width: 200px;
+            height: 200px;
+            border: 2px black solid;
+            transition: 1.5s;
+            border-radius: 50%;
+        }
+
+        .x {
+            margin: 1%;
+            transition: 2s;
+
+        }
+
+        .x:hover {
+            margin-top: 40%;
+            transition: 2s;
+        }
+
+        .z {
+            width: 500px;
+            height: 25px;
+            margin-top: 10px;
+            transition: 0.5s;
+            text-align: center;
+            background-color: cornflowerblue;
+            float: left;
+        }
+
+        .z:hover {
+            width: 500px;
+            height: 25px;
+            background-color: blue;
+            color: white;
+            box-shadow: 5px 5px 15px black;
+            transition: 0.5s;
+        }
+
+        .p {
+            width: 50px;
+            height: 50px;
+            border: 2px black solid;
+            border-radius: 50%;
+            margin-left: 863px;
+            box-shadow: 3px 3px 15px black;
+            background-color: cadetblue;
+            position: relative;
+            animation: MyDiv;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            margin-top: 48px;
+            transition: 1.5s;
+        }
+
+        @keyframes MyDiv {
+            0% {
+                left: 0%;
+                background-image: linear-gradient(aqua, darkgreen);
+            }
+
+            50% {
+                left: 346px;
+                background-image: linear-gradient(aqua, darkgreen);
+            }
+
+            51% {
+                right: 356px;
+                background-image: linear-gradient(aqua, darkgreen);
+            }
+
+            100% {
+                left: 0px;
+                background-image: linear-gradient(aqua, darkgreen);
+            }
+        }
+
+        .v {
+            width: 3px;
+            height: 100px;
+            background-color: black;
+            box-shadow: 2px 2px 15px black;
+            float: right;
+            border-radius: 3px;
+        }
+
+        .m {
+            width: 3px;
+            height: 100px;
+            background-color: black;
+            box-shadow: 2px 2px 15px black;
+            float: left;
+            margin-left: 861px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb"></div>
+    <div class="t"></div> <br>
+    <div class="s">
+        <p class="x">Kunal</p>
+    </div> <br>
+    <div class="a"></div> <br>
+    <div class="z">Welcome</div> <br>
+    <div class="m"></div>
+    <div class="v"></div>
+    <div class="p"></div>
+</body>
+
+</html>

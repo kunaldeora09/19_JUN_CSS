@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: cadetblue;
+        }
+
+        .box {
+            background-color: darkorange;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px;
+            border: 2px solid black;
+        }
+
+        .nav {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav:hover {
+            color: mediumaquamarine;
+        }
+
+        .icon {
+            color: white;
+            font-size: 20px;
+            display: none;
+        }
+
+        .cont{
+            display: none;
+        }
+
+        @media (max-width: 575.98px) {
+            .linav {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+            }
+
+            .fa-bars:hover{
+                color: mediumaquamarine;
+            }
+
+            .fa-bars:hover ~ .cont{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <ul class="navbar" type="none">
+                <li class="linav"><a class="nav" href="#">Home</a></li>
+                <li class="linav"><a class="nav" href="#">About</a></li>
+                <li class="linav"><a class="nav" href="#">Menu</a></li>
+                <li class="linav"><a class="nav" href="#">Blog</a></li>
+                <li class="linav"><a class="nav" href="#">Shop</a></li>
+                <li class="linav"><a class="nav" href="#">Contact</a></li>
+                <li class="icon"><i class="fa-solid fa-bars"></i>
+                
+                    <div class="cont">
+                        <ul class="ulcont" type="none">
+                            <li class="under"><a class="nav" href="#">Home</a></li>
+                            <li class="under"><a class="nav" href="#">About</a></li>
+                            <li class="under"><a class="nav" href="#">Menu</a></li>
+                            <li class="under"><a class="nav" href="#">Blog</a></li>
+                            <li class="under"><a class="nav" href="#">Shop</a></li>
+                            <li class="under"><a class="nav" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+    <!-- <div class="cont">
+        <ul class="ulcont" type="none">
+            <li class="under"><a class="nav" href="#">Home</a></li>
+            <li class="under"><a class="nav" href="#">About</a></li>
+            <li class="under"><a class="nav" href="#">Menu</a></li>
+            <li class="under"><a class="nav" href="#">Blog</a></li>
+            <li class="under"><a class="nav" href="#">Shop</a></li>
+            <li class="under"><a class="nav" href="#">Contact</a></li>
+        </ul>
+    </div> -->
+    </div>
+</body>
+
+</html>
