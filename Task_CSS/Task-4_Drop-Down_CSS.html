@@ -1,12 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop Down</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        .box {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .side {
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid black;
+            background-color: salmon;
+        }
+
+        .home,
+        .menu,
+        .settings,
+        .about {
+            padding: 10px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        .home:hover,
+        .menu:hover,
+        .settings:hover,
+        .about:hover {
+            color: mediumseagreen;
+        }
+
+        .home1,
+        .home2,
+        .home3,
+        .home4 {
+            display: none;
+            position: relative;
+        }
+
+        .homediv {
+            background-color: mediumslateblue;
+            position: absolute;
+            top: 56.5px;
+            display: none;
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .home:hover .vis,
+        .menu:hover .vis,
+        .settings:hover .vis,
+        .about:hover .vis {
+            display: block;
+        }
+
+        .home:hover .homediv,
+        .menu:hover .homediv,
+        .settings:hover .homediv {
+            display: block;
+        }
+
+        .about:hover .homediv {
+            display: block;
+            left: -50px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .home1:hover .hide,
+        .menu1:hover .hide,
+        .settings1:hover .hide,
+        .about1:hover .hide {
+            display: block;
+        }
+
+        .home2:hover .hide,
+        .menu2:hover .hide,
+        .settings2:hover .hide,
+        .about2:hover .hide {
+            display: block;
+        }
+
+        .home3:hover .hide,
+        .menu3:hover .hide,
+        .settings3:hover .hide,
+        .about3:hover .hide {
+            display: block;
+        }
+
+        .home4:hover .hide,
+        .menu4:hover .hide,
+        .settings4:hover .hide,
+        .about4:hover .hide {
+            display: block;
+        }
+
+        .oneside1 {
+            position: absolute;
+            left: 150px;
+            top: 0px;
+        }
+
+        .oneside2 {
+            position: absolute;
+            left: 150px;
+            top: -34.5px;
+        }
+
+        .oneside3 {
+            position: absolute;
+            left: 150px;
+            top: -69.5px;
+        }
+
+        .oneside4 {
+            position: absolute;
+            left: 150px;
+            top: -104px;
+        }
+
+        .visit1,
+        .visit2,
+        .visit3,
+        .visit4 {
+            position: absolute;
+            left: 150px;
+            top: 0px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="box">
+        <ul class="side" type="none">
+            <li class="home">Home
+
+                <div class="homediv">
+                    <ul class="homeside" type="none">
+                        <li class="home1 vis">Home1
+                            <ul class="oneside1" type="none">
+                                <li class="hide">Home1-1</li>
+                                <li class="hide">Home1-2</li>
+                                <li class="hide">Home1-3</li>
+                                <li class="hide">Home1-4</li>
+                            </ul>
+                        </li>
+                        <li class="home2 vis">Home2
+                            <ul class="oneside2" type="none">
+                                <li class="hide">Home2-1</li>
+                                <li class="hide">Home2-2</li>
+                                <li class="hide">Home2-3</li>
+                                <li class="hide">Home2-4</li>
+                            </ul>
+                        </li>
+                        <li class="home3 vis">Home3
+                            <ul class="oneside3" type="none">
+                                <li class="hide">Home3-1</li>
+                                <li class="hide">Home3-2</li>
+                                <li class="hide">Home3-3</li>
+                                <li class="hide">Home3-4</li>
+                            </ul>
+                        </li>
+                        <li class="home4 vis">Home4
+                            <ul class="oneside4" type="none">
+                                <li class="hide">Home4-1</li>
+                                <li class="hide">Home4-2</li>
+                                <li class="hide">Home4-3</li>
+                                <li class="hide">Home4-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu">Menu
+                <div class="homediv">
+                    <ul class="homeside" type="none">
+                        <li class="menu1 vis">Menu1
+                            <ul class="visit1" type="none">
+                                <li class="hide">Menu1-1</li>
+                                <li class="hide">Menu1-2</li>
+                                <li class="hide">Menu1-3</li>
+                                <li class="hide">Menu1-4</li>
+                            </ul>
+                        </li>
+                        <li class="menu2 vis">Menu2
+                            <ul class="visit2" type="none">
+                                <li class="hide">Menu2-1</li>
+                                <li class="hide">Menu2-2</li>
+                                <li class="hide">Menu2-3</li>
+                                <li class="hide">Menu2-4</li>
+                            </ul>
+                        </li>
+                        <li class="menu3 vis">Menu3
+                            <ul class="visit3" type="none">
+                                <li class="hide">Menu3-1</li>
+                                <li class="hide">Menu3-2</li>
+                                <li class="hide">Menu3-3</li>
+                                <li class="hide">Menu3-4</li>
+                            </ul>
+                        </li>
+                        <li class="menu4 vis">Menu4
+                            <ul class="visit4" type="none">
+                                <li class="hide">Menu4-1</li>
+                                <li class="hide">Menu4-2</li>
+                                <li class="hide">Menu4-3</li>
+                                <li class="hide">Menu4-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="settings">Settings
+                <div class="homediv">
+                    <ul class="homeside" type="none">
+                        <li class="settings1 vis">Setting1
+                            <ul class="visit1" type="none">
+                                <li class="hide">Setting1-1</li>
+                                <li class="hide">Setting1-2</li>
+                                <li class="hide">Setting1-3</li>
+                                <li class="hide">Setting1-4</li>
+                            </ul>
+                        </li>
+                        <li class="settings2 vis">Setting2
+                            <ul class="visit2" type="none">
+                                <li class="hide">Setting2-1</li>
+                                <li class="hide">Setting2-2</li>
+                                <li class="hide">Setting2-3</li>
+                                <li class="hide">Setting2-4</li>
+                            </ul>
+                        </li>
+                        <li class="settings3 vis">Setting3
+                            <ul class="visit3" type="none">
+                                <li class="hide">Setting3-1</li>
+                                <li class="hide">Setting3-2</li>
+                                <li class="hide">Setting3-3</li>
+                                <li class="hide">Setting3-4</li>
+                            </ul>
+                        </li>
+                        <li class="settings4 vis">Setting4
+                            <ul class="visit4" type="none">
+                                <li class="hide">Setting4-1</li>
+                                <li class="hide">Setting4-2</li>
+                                <li class="hide">Setting4-3</li>
+                                <li class="hide">Setting4-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="about">About
+                <div class="homediv">
+                    <ul class="homeside" type="none">
+                        <li class="about1 vis">About1
+                            <ul class="visit1" type="none">
+                                <li class="hide">About1-1</li>
+                                <li class="hide">About1-2</li>
+                                <li class="hide">About1-3</li>
+                                <li class="hide">About1-4</li>
+                            </ul>
+                        </li>
+                        <li class="about2 vis">About2
+                            <ul class="visit2" type="none">
+                                <li class="hide">About2-1</li>
+                                <li class="hide">About2-2</li>
+                                <li class="hide">About2-3</li>
+                                <li class="hide">About2-4</li>
+                            </ul>
+                        </li>
+                        <li class="about3 vis">About3
+                            <ul class="visit3" type="none">
+                                <li class="hide">About3-1</li>
+                                <li class="hide">About3-2</li>
+                                <li class="hide">About3-3</li>
+                                <li class="hide">About3-4</li>
+                            </ul>
+                        </li>
+                        <li class="about4 vis">Setting4
+                            <ul class="visit4" type="none">
+                                <li class="hide">About4-1</li>
+                                <li class="hide">About4-2</li>
+                                <li class="hide">About4-3</li>
+                                <li class="hide">About4-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
 </body>
+
 </html>
