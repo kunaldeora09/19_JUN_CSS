@@ -16,10 +16,10 @@
             box-sizing: border-box;
         }
 
-        body{
+        body {
             background-color: mediumaquamarine;
         }
-        
+
         .container {
             background-color: darkorange;
             position: relative;
@@ -27,7 +27,7 @@
             margin: 0 auto;
             margin-top: 40px;
         }
-        
+
         .navbar {
             display: flex;
             border: 2px solid black;
@@ -47,13 +47,24 @@
         }
 
         .icon {
-            color: white;
             font-size: 20px;
+            color: white;
             display: none;
             cursor: pointer;
         }
 
-        .cont{
+        input {
+            display: none;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 220px;
+            top: 33px;
+            opacity: 0;
+        }
+
+        .cont {
             visibility: hidden;
             position: absolute;
             padding-left: 40px;
@@ -64,7 +75,8 @@
             border: 2px solid black;
             transition: all 1s ease-in;
         }
-        .under{
+
+        .under {
             padding: 5px;
         }
 
@@ -73,15 +85,16 @@
                 display: none;
             }
 
-            .icon {
+            .icon,
+            input {
                 display: block;
             }
 
-            .fa-bars:hover{
+            .fa-bars:hover {
                 color: mediumaquamarine;
             }
 
-            .fa-bars:hover + .cont{
+            input:checked + .cont {
                 visibility: visible;
                 left: 0px;
                 top: 83px;
@@ -93,7 +106,7 @@
 
 <body>
     <nav>
-    <div class="container">
+        <div class="container">
             <ul class="navbar" type="none">
                 <li class="linav"><a class="nav" href="#">Home</a></li>
                 <li class="linav"><a class="nav" href="#">About</a></li>
@@ -102,7 +115,7 @@
                 <li class="linav"><a class="nav" href="#">Shop</a></li>
                 <li class="linav"><a class="nav" href="#">Contact</a></li>
                 <li class="icon"><i class="fa-solid fa-bars"></i>
-                
+                    <input type="checkbox">
                     <div class="cont">
                         <ul class="ulcont" type="none">
                             <li class="under"><a class="nav" href="#">Home</a></li>
@@ -115,7 +128,7 @@
                     </div>
                 </li>
             </ul>
-    </div>
+        </div>
     </nav>
 </body>
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(75deg, rgba(0, 255, 4, 0.755), rgba(0, 244, 253, 0.656));
+        }
+        .main {
+            border: 2px solid red;
+        }
+
+        .container {
+            width: 50%;
+            margin: 100px auto;
+            border: 2px solid blue;
+            display: flex;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border: 2px solid violet;
+        }
+
+        .col {
+            width: 50%;
+            border: 2px solid black;
+            margin: 10px;
+            position: relative;
+        }
+
+        .line {
+            height: 50%;
+        }
+
+        .side {
+            height: 30%;
+            width: 30%;
+            margin: 9% auto;
+        }
+
+        .size,
+        .sideup,
+        .down,
+        .rightdown,
+        .center {
+            position: absolute;
+            width: 50%;
+        }
+
+        .size {
+            left: -25%;
+            top: -20%;
+        }
+
+        .sideup {
+            left: 75%;
+            top: -17%;
+
+        }
+
+        .down {
+            left: -25%;
+            top: 85%;
+        }
+
+        .rightdown {
+            left: 75%;
+            top: 85%;
+        }
+
+        .center{
+            left: 80%;
+            top: 32%;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="col">
+                <div class="size">
+                    <img src="../ImageCSS/03imageCSS.jpg" alt="Image">
+                </div>
+                <div class="line"><img src="../ImageCSS/06imageCSS.jpeg" alt="Image"></div>
+                <div class="side"><img src="../ImageCSS/09imageCSS.jpeg" alt="Image"></div>
+                <div class="down"><img src="../ImageCSS/15imageCSS.jpg" alt="Image"></div>
+                <div class="center"><img src="../ImageCSS/23imageCSS.jpg" alt="Image"></div>
+            </div>
+            <div class="col">
+                <div class="sideup"><img src="../ImageCSS/14imageCSS.jpg" alt="Image"></div>
+                <div class="side"><img src="../ImageCSS/11imageCSS.jpeg" alt="Image"></div>
+                <div class="line"><img src="../ImageCSS/10imageCSS.jpeg" alt="Image"></div>
+                <div class="rightdown"><img src="../ImageCSS/20imageCSS.jpg" alt="Image"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

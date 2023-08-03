@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Media Query</title>
+    <style>
+        body {
+            background-color: orange;
+            color: white;
+        }
+
+        h1::after {
+            content: " Kunal";
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                background-color: mediumvioletred;
+            }
+
+            h1::after {
+                content: " 1200px";
+            }
+        }
+
+        @media (max-width: 992px) {
+            body {
+                background-color: navy;
+            }
+
+            h1::after {
+                content: " 992px";
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: olive;
+            }
+
+            h1::after {
+                content: " 768px";
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                background-color: royalblue;
+            }
+
+            h1::after {
+                content: " 576px";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Namaste</h1>
+</body>
+
+</html>
